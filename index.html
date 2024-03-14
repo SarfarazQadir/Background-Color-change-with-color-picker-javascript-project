@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
+    <title>Background Color Changer</title>
+    <style>
+    
+        body {
+            transition: background-color 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="btn btn-success" style="text-align: center; align-items: center; justify-content: center; display: flex;">Developer Super League TASK 1 Completed By Team Desi Developers</h1>
+    <h1  style="margin-top: 120px; text-align: center; align-items: center; justify-content: center; display: flex;">Background Color Changer</h1>
+    <div style="margin-top: 120px; text-align: center; align-items: center; justify-content: center; display: flex;">
+    <input type="color" id="CP">
+    <button class="btn btn-success" onclick="changeBackgroundColor()">Change Color</button>
+</div>
+    <script>
+        function changeBackgroundColor() {
+            const colorPicker = document.getElementById("CP");
+            const selectedColor = colorPicker.value;
+            document.body.style.backgroundColor = selectedColor;
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
